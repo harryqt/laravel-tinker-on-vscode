@@ -12,21 +12,24 @@
         {
             "name": "Keunbae Park",
             "email": "ppotpo@gmail.com"
+        },
+        {
+            "name": "Harry",
+            "email": "contact@harry.plus"
         }
     ],
     "require": {
         "php": "^8.2",
-        "illuminate/console": "^10.0|^11.0",
-        "illuminate/http": "^10.0|^11.0",
-        "illuminate/support": "^10.0|^11.0",
-        "laravel/tinker": "^2.9",
+        "illuminate/console": "*",
+        "illuminate/http": "*",
+        "illuminate/support": "*",
+        "laravel/tinker": "*",
         "pkboom/file-watcher": "^0.2.6",
         "react/event-loop": "^1.2",
-        "symfony/console": "^6.0|^7.0"
+        "symfony/console": "^7.0"
     },
     "require-dev": {
         "laravel/pint": "^1.24",
-        "orchestra/testbench": "9.x-dev",
         "phpunit/phpunit": "^10.0"
     },
     "autoload": {
