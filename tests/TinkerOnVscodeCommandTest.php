@@ -10,7 +10,7 @@ use React\EventLoop\Loop;
  */
 class TinkerOnVscodeCommandTest extends TestCase
 {
-    public function tearDown(): void
+    protected function tearDown(): void
     {
         parent::tearDown();
 

@@ -28,7 +28,7 @@ class TinkerOnVscodeCommand extends Command
     {
         file_put_contents(Config::get('tinker-on-vscode.output'), null);
 
-        if (!$this->option('continuous')) {
+        if (! $this->option('continuous')) {
             file_put_contents(Config::get('tinker-on-vscode.input'), "<?php\n\n");
 
             exec('code '.Config::get('tinker-on-vscode.input'));
@@ -39,7 +39,7 @@ class TinkerOnVscodeCommand extends Command
 
     public function startWatching()
     {
-        $finder = (new Finder())
+        $finder = (new Finder)
             ->name(Str::afterLast(Config::get('tinker-on-vscode.input'), '/'))
             ->files()
             ->in(Str::beforeLast(Config::get('tinker-on-vscode.input'), '/'));

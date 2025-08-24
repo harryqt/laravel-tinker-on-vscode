@@ -28,7 +28,7 @@ class ExecuteCodeCommand extends Command
 
         $code = file_get_contents(Config::get('tinker-on-vscode.input'));
 
-        if (!$this->option('use-dump')) {
+        if (! $this->option('use-dump')) {
             $code = preg_replace(['/^\s*dump\(/m', '/^\s*echo\s/m', '/^\s*dv\(/m'], '//', $code);
         } else {
             $this->line('');
@@ -56,7 +56,7 @@ class ExecuteCodeCommand extends Command
             $config->get('tinker.dont_alias', [])
         );
 
-        $output = $this->option('use-dump') ? $this->output : new BufferedOutput();
+        $output = $this->option('use-dump') ? $this->output : new BufferedOutput;
 
         try {
             $shell->setOutput($output);
@@ -70,7 +70,7 @@ class ExecuteCodeCommand extends Command
             $loader->unregister();
         }
 
-        if (!$this->option('use-dump')) {
+        if (! $this->option('use-dump')) {
             file_put_contents(Config::get('tinker-on-vscode.output'), $result);
         }
 
