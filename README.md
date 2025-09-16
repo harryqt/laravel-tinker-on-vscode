@@ -15,13 +15,13 @@ You can even dump:
 ## Installation
 
 ```bash
-composer require pkboom/laravel-tinker-on-vscode --dev
+composer require harryqt/laravel-tinker-on-vscode --dev
 ```
 
 You can publish the config:
 
 ```bash
-php artisan vendor:publish --provider="Pkboom\TinkerOnVscode\TinkerOnVscodeServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Harryqt\TinkerOnVscode\TinkerOnVscodeServiceProvider" --tag="config"
 ```
 
 ## Usage
@@ -35,7 +35,3 @@ You can show queries.
 ```bash
 php artisan tinker-on-vscode --query
 ```
-
-## License
-
-The MIT License (MIT). Please see [MIT license](http://opensource.org/licenses/MIT) for more information.

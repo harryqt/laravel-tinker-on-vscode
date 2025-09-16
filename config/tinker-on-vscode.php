@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'input' => storage_path('app/input.php'),
 

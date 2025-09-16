@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests;
 
+use Harryqt\TinkerOnVscode\TinkerOnVscodeServiceProvider;
 use Illuminate\Support\Facades\File;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Pkboom\TinkerOnVscode\TinkerOnVscodeServiceProvider;
 
 abstract class TestCase extends Orchestra
 {

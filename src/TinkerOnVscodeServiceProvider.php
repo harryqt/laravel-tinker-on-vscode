@@ -1,6 +1,8 @@
 <?php
 
-namespace Pkboom\TinkerOnVscode;
+declare(strict_types=1);
+
+namespace Harryqt\TinkerOnVscode;
 
 use Illuminate\Support\ServiceProvider;
 

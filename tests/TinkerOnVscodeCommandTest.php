@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests;
 
 use Illuminate\Support\Facades\File;
 use React\EventLoop\Loop;
 
 /**
- * @see \Pkboom\TinkerOnVscode\TinkerOnVscodeCommand
+ * @see \Harryqt\TinkerOnVscode\TinkerOnVscodeCommand
  */
 class TinkerOnVscodeCommandTest extends TestCase
 {

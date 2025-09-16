@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests;
 
 use Illuminate\Database\Schema\Blueprint;
@@ -7,7 +9,7 @@ use Illuminate\Support\Facades\Config;
 use Tests\Models\TestModel;
 
 /**
- * @see \Pkboom\TinkerOnVscode\ExecuteCodeCommand
+ * @see \Harryqt\TinkerOnVscode\ExecuteCodeCommand
  */
 class ExecuteCodeCommandTest extends TestCase
 {
